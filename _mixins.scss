@@ -1,0 +1,25 @@
+
+
+
+@mixin boton ($size1: 17px) {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: $size1;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 40px;
+    font-weight: bold;
+    border-style: none;
+  
+    &:hover {
+      background-color: rgb(229, 163, 31);
+      color: black;
+      text-decoration: none
+    }
+  }
+  
+  ._boton  {
+    @include boton;
+  }
+  

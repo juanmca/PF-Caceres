@@ -1,0 +1,451 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+._boton {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 40px;
+  font-weight: bold;
+  border-style: none;
+}
+._boton:hover {
+  background-color: rgb(229, 163, 31);
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Mansalva", cursive;
+  font-size: 40px;
+  color: rgb(221, 30, 30);
+}
+
+p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+a {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: BOLD !important;
+}
+
+ul a {
+  color: black !important;
+}
+
+/* ----linea corta roja  separacion-- global---- */
+.linea {
+  border-bottom: 1px solid rgb(221, 30, 30);
+  border-width: 1px;
+  margin: 20px auto;
+  width: 90px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* /*logo/nav/lu GLOBAL ---INDEX Y SECCIONES--uso bootstrap-- */
+.navbar {
+  background-color: white;
+}
+.navbar .navbar-brand img {
+  height: 60px;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler i {
+  color: black;
+  font-size: 20px;
+}
+.navbar .navbar-nav .nav-link {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-inline: 40px;
+}
+
+/* /  INDEX Section foto -titulo  img - h1 */
+.contIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.contIndex .contindex_image {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url(img/fire-4029360_1920.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 100%;
+  width: 100%;
+}
+.contIndex .contindex_titulo {
+  font-size: 11.3rem;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  text-shadow: 10px 3px 3px black;
+  letter-spacing: 20px;
+  grid-column: 2/span 8;
+  grid-row: 2;
+}
+
+/*  INDEX -section- quienesSomos ------------------ */
+.quienesSomos {
+  text-align: center;
+  height: 400px;
+  padding-top: 100px;
+  background-color: white;
+}
+.quienesSomos p {
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
+.tituloNe h2 {
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  height: 100px;
+  width: 100%;
+}
+
+.contNe {
+  width: 100%;
+  height: 500px;
+}
+.contNe video {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contNe .contNe1 {
+  text-align: center;
+  padding: 50px;
+  height: 100px;
+  position: relative;
+  top: -100px;
+}
+
+/* ----------------------INICIO SECCIONES---------------------------------------------- */
+/* SECCION--CONTACTOS------ */
+.tituloCont {
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.nleftForm {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  left: 40px;
+}
+
+.nleftForm p {
+  color: red;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.container-fluid i {
+  font-size: 20px;
+  color: #d31414;
+  height: 20px;
+}
+
+.nleftForm .nleftPhone {
+  display: flex;
+  flex-direction: row;
+}
+
+.nleftForm .nleftEmail {
+  display: flex;
+  flex-direction: row;
+}
+
+.nrightForm {
+  position: relative;
+  right: 40px;
+}
+
+form {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+form input[type=text],
+form input[type=tel] {
+  height: 50px;
+  border: solid 2px grey;
+  margin-bottom: 20px;
+}
+
+form input[type=email] {
+  height: 50px;
+  border: solid 2px grey;
+  margin-bottom: 30px;
+}
+
+form .form-control {
+  border: solid 2px grey;
+}
+
+button.btn-primary {
+  border: 2px solid #000;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #d31414;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ---------------SECCION EVENTOS----------- */
+.tituloEvent h2 {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+.contenedor .foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.contenedor .foto img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedor .foto p {
+  margin-top: 10px;
+  margin-top: 30px;
+}
+.contenedor .foto p::first-letter {
+  font-size: 160%;
+  color: red;
+  font-weight: bold;
+  padding: 2px;
+}
+
+/* ---------------SECCION NOSOTROS --------------- */
+section .jumbotron {
+  background-image: url(img/grilling-5372048_1280.jpg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: space;
+  background-attachment: fixed, scroll;
+  height: 550px;
+  width: 100%;
+  color: rgb(253, 253, 247);
+  border-radius: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.jumbotron h2 {
+  color: white;
+}
+
+.jumbotron p {
+  margin-top: 30px;
+  color: rgb(252, 252, 250) !important;
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px;
+}
+
+main .tituloQs {
+  background-color: rgb(5, 5, 4);
+  color: white;
+  margin: 0 auto;
+}
+
+.nleft {
+  height: 500px;
+  background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nright {
+  color: rgb(20, 19, 19);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.nright p {
+  padding: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nright p::first-letter {
+  font-size: 160%;
+  color: black;
+  font-weight: bold;
+}
+
+/* ------------ SECCION GALERIA------------------ */
+.tituloGal h2 {
+  padding: 50px;
+  margin: 50px 0 auto;
+  width: 100%;
+}
+.tituloGal p {
+  padding: 20px;
+  text-align: center;
+}
+
+.galeria {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 200px);
+  grid-gap: 20px;
+}
+.galeria .item {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.galeria .item:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+.galeria .item1 {
+  background-image: url(img/argentine-barbeque-2753040_640.jpg);
+}
+.galeria .item2 {
+  background-image: url(img/barbecue-382490_640.jpg);
+}
+.galeria .item3 {
+  background-image: url(img/beef-416967_640.jpg);
+}
+.galeria .item4 {
+  background-image: url(img/c86e0a85eef2c3f9404f5667bc228ead.jpg);
+}
+.galeria .item5 {
+  background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
+}
+.galeria .item6 {
+  background-image: url(img/IMG-20210703-WA0013.jpg);
+}
+
+/*-------------- FOOTER index y  todas las secciones-------- */
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+footer i {
+  color: rgb(244, 248, 246);
+  font-size: 50px;
+  letter-spacing: 30px;
+}
+
+/* -------------MEDIA QUERIES------------ */
+/* ----------------GALERIA */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 945px) {
+  .nleft {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=estilos.css.map */
