@@ -63,7 +63,7 @@ ul a {
   box-sizing: border-box;
 }
 
-/* /*logo/nav/lu GLOBAL ---INDEX Y SECCIONES--uso bootstrap-- */
+/* /*logo/nav------INDEX Y SECCIONES--uso bootstrap-- */
 .navbar {
   background-color: white;
 }
@@ -84,50 +84,57 @@ ul a {
   margin-inline: 40px;
 }
 
-/* /  INDEX Section foto -titulo  img - h1 */
-.contIndex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-}
-.contIndex .contindex_image {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background-image: url(img/fire-4029360_1920.jpg);
+/* /  INDEX Section foto-titulo  img - h1 */
+.bg-image {
+  background-image: url("img/fire-4029360_1920.jpg");
   background-size: cover;
-  background-position: left;
-  height: 100%;
-  width: 100%;
+  background-position: center;
+  height: 400px;
+  position: relative;
 }
-.contIndex .contindex_titulo {
-  font-size: 11.3rem;
+.bg-image .titulo1 {
   color: white;
   font-family: "Bebas Neue", cursive;
+  font-size: 11.3rem;
   text-shadow: 10px 3px 3px black;
-  letter-spacing: 20px;
-  grid-column: 2/span 8;
-  grid-row: 2;
+  text-align: center;
+  letter-spacing: 10px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+@media (max-width: 385px) {
+  .bg-image .titulo1 {
+    font-size: 5rem;
+    text-align: center;
+    height: auto;
+    white-space: normal;
+  }
+}
+@media (max-width: 767px) {
+  .bg-image {
+    height: 300px;
+  }
+}
+@media (max-width: 575px) {
+  .bg-image {
+    height: 200px;
+  }
 }
 
 /*  INDEX -section- quienesSomos ------------------ */
 .quienesSomos {
   text-align: center;
-  height: 400px;
-  padding-top: 100px;
-  background-color: white;
 }
 .quienesSomos p {
-  text-decoration: none;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
 .tituloNe h2 {
   background-color: white;
-  padding: 20px;
   margin: 0 auto;
   height: 100px;
   width: 100%;

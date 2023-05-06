@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
@@ -34,7 +33,6 @@ $color3: black;
 $color4: white;
 
 //globales
-
 
 h2 {
   font-size: $size3;
@@ -80,7 +78,7 @@ ul a {
   box-sizing: border-box;
 }
 
-/* /*logo/nav/lu GLOBAL ---INDEX Y SECCIONES--uso bootstrap-- */
+/* /*logo/nav------INDEX Y SECCIONES--uso bootstrap-- */
 
 .navbar {
   background-color: white;
@@ -108,32 +106,42 @@ ul a {
   }
 }
 
-/* /  INDEX Section foto -titulo  img - h1 */
+/* /  INDEX Section foto-titulo  img - h1 */
 
-.contIndex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.bg-image {
+  background-image: url("img/fire-4029360_1920.jpg");
+  background-size: cover;
+  background-position: center;
   height: 400px;
+  position: relative;
 
-  .contindex_image {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-image: url(img/fire-4029360_1920.jpg);
-    background-size: cover;
-    background-position: left;
-    height: 100%;
-    width: 100%;
+  .titulo1 {
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 11.3rem;
+    text-shadow: 10px 3px 3px black;
+    text-align: center;
+    letter-spacing: 10px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    @media (max-width: 385px) {
+      font-size: 5rem;
+      text-align: center;
+      height: auto;
+      white-space: normal;
+    }
   }
 
-  .contindex_titulo {
-    font-size: 11.3rem;
-    color: white;
-    font-family: $font2;
-    text-shadow: 10px 3px 3px black;
-    letter-spacing: 20px;
-    grid-column: 2 / span 8;
-    grid-row: 2;
+  @media (max-width: 767px) {
+    height: 300px;
+  }
+
+  @media (max-width: 575px) {
+    height: 200px;
   }
 }
 
@@ -141,15 +149,9 @@ ul a {
 
 .quienesSomos {
   text-align: center;
-  height: 400px;
-  padding-top: 100px;
-  background-color: white;
 
   p {
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -158,7 +160,7 @@ ul a {
 .tituloNe {
   h2 {
     background-color: white;
-    padding: 20px;
+
     margin: 0 auto;
     height: 100px;
     width: 100%;
@@ -405,7 +407,6 @@ main .tituloQs {
       transition: all 0.9s;
       background-size: 100%;
       filter: grayscale(10%);
-    
     }
   }
 
@@ -504,5 +505,3 @@ footer i {
     height: auto;
   }
 }
-
-
