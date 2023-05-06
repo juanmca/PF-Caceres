@@ -27,7 +27,7 @@ $center-align: center;
 
 // paleta colores
 
-$color1: rgb(221, 30, 30);
+$color1: #800000;
 $color2: red;
 $color3: black;
 $color4: white;
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-family: $font1;
+  font-family: $font2;
   font-size: $size3;
   color: $color1;
 }
@@ -117,12 +117,10 @@ ul a {
 
   .titulo1 {
     color: white;
-    font-family: "Bebas Neue", cursive;
-    font-size: 11.3rem;
+    font-family: $font2;
+    font-size: 11rem;
     text-shadow: 10px 3px 3px black;
-    text-align: center;
-    letter-spacing: 10px;
-    height: 50vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,6 +140,23 @@ ul a {
 
   @media (max-width: 575px) {
     height: 200px;
+  }
+}
+
+/*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
+.zoom-image {
+  animation-name: zoom;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
@@ -310,28 +325,29 @@ button.btn-primary {
 /* ---------------SECCION NOSOTROS --------------- */
 
 section .jumbotron {
-  background-image: url(img/grilling-5372048_1280.jpg);
+  background-image: url(img/img-1.jpg);
   background-color: white;
   background-size: cover;
   background-position: center;
   background-repeat: space;
   background-attachment: fixed, scroll;
-  height: 550px;
+  height: 500px;
   width: 100%;
   color: rgb(253, 253, 247);
   border-radius: 0;
   margin-bottom: 0;
   text-align: center;
-}
-.jumbotron h2 {
-  color: white;
+
+  h2 {
+    color: white;
+    padding: 50px;
+    font-weight: bold;
+  }
 }
 
 .jumbotron p {
   margin-top: 30px;
-  color: rgb(252, 252, 250) !important;
   font-size: 20px;
-  font-style: italic;
   padding: 20px;
 }
 
@@ -339,6 +355,7 @@ main .tituloQs {
   background-color: rgb(5, 5, 4);
   color: white;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 .nleft {
@@ -346,9 +363,11 @@ main .tituloQs {
   background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
   background-size: cover;
   background-position: center;
+  border: solid 3px black;
 }
 
 .nright {
+  height: 500px;
   color: rgb(20, 19, 19);
   background-color: white;
   display: flex;
@@ -356,16 +375,24 @@ main .tituloQs {
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 15px;
+  border: solid 3px black;
+
+  p {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+
+    a {
+      max-width: 100%;
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
 }
 
-.nright p {
-  padding: 5px;
-  text-align: center;
-  padding-top: 30px;
-}
 .nright p::first-letter {
   font-size: 160%;
-  color: black;
+  color: $color1;
   font-weight: bold;
 }
 
@@ -376,10 +403,11 @@ main .tituloQs {
     padding: 50px;
     margin: 50px 0 auto;
     width: 100%;
-  }
-  p {
-    padding: 20px;
-    text-align: center;
+
+    p {
+      padding: 20px;
+      text-align: center;
+    }
   }
 }
 
@@ -444,17 +472,18 @@ main .tituloQs {
   color: white;
   text-align: center;
   padding: 20px;
+
+  p {
+    margin-bottom: 20px;
+
+   
+  }
 }
 
-.footer p {
-  margin-bottom: 20px;
-  font-family: "Oswald", sans-serif;
-}
-
-footer i {
+i {
   color: rgb(244, 248, 246);
-  font-size: 50px;
-  letter-spacing: 30px;
+  font-size: 30px;
+  letter-spacing: 20px;
 }
 
 /* -------------MEDIA QUERIES------------ */
