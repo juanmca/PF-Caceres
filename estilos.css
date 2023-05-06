@@ -122,6 +122,7 @@ ul a {
 }
 
 /*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
+/* animacion*/
 .zoom-image {
   -webkit-animation-name: zoom;
           animation-name: zoom;
@@ -321,9 +322,8 @@ section .jumbotron h2 {
 }
 
 .jumbotron p {
-  margin-top: 30px;
-  font-size: 20px;
-  padding: 20px;
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 main .tituloQs {
@@ -354,13 +354,8 @@ main .tituloQs {
 }
 .nright p {
   text-align: center;
-  padding-top: 30px;
-  font-weight: bold;
-}
-.nright p a {
-  max-width: 100%;
-  display: inline-block;
-  margin-top: 15px;
+  padding-top: 20px;
+  font-size: 14px;
 }
 
 .nright p::first-letter {

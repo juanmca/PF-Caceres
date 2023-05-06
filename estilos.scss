@@ -144,6 +144,9 @@ ul a {
 }
 
 /*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
+
+/* animacion*/
+
 .zoom-image {
   animation-name: zoom;
   animation-duration: 8s;
@@ -346,9 +349,9 @@ section .jumbotron {
 }
 
 .jumbotron p {
-  margin-top: 30px;
-  font-size: 20px;
-  padding: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+
 }
 
 main .tituloQs {
@@ -379,16 +382,14 @@ main .tituloQs {
 
   p {
     text-align: center;
-    padding-top: 30px;
-    font-weight: bold;
+    padding-top: 20px;
+    font-size: 14px;
+   
 
-    a {
-      max-width: 100%;
-      display: inline-block;
-      margin-top: 15px;
-    }
+   
   }
 }
+
 
 .nright p::first-letter {
   font-size: 160%;
