@@ -4,9 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
-//import mixin
+//imports
 
 @import "_mixins";
+@import "_bucle";
 
 //fonts
 
@@ -109,7 +110,7 @@ ul a {
 /* /  INDEX Section foto-titulo  img - h1 */
 
 .bg-image {
-  background-image: url("img/fire-4029360_1920.jpg");
+  background-image: url(img/13.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -297,6 +298,7 @@ button.btn-primary {
   justify-items: center;
   padding-top: 60px;
   margin-bottom: 30px;
+  
 
   .foto {
     display: flex;
@@ -325,10 +327,13 @@ button.btn-primary {
   }
 }
 
+
+
+
 /* ---------------SECCION NOSOTROS --------------- */
 
 section .jumbotron {
-  background-image: url(img/img-1.jpg);
+  background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -351,7 +356,6 @@ section .jumbotron {
 .jumbotron p {
   margin-top: 5px;
   font-size: 16px;
-
 }
 
 main .tituloQs {
@@ -363,7 +367,7 @@ main .tituloQs {
 
 .nleft {
   height: 500px;
-  background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
+  background-image: url(img/12.jpg);
   background-size: cover;
   background-position: center;
   border: solid 3px black;
@@ -384,12 +388,8 @@ main .tituloQs {
     text-align: center;
     padding-top: 20px;
     font-size: 14px;
-   
-
-   
   }
 }
-
 
 .nright p::first-letter {
   font-size: 160%;
@@ -421,47 +421,6 @@ main .tituloQs {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-gap: 20px;
-
-  .item {
-    width: 100%;
-    background-color: white;
-    border: 5px solid white;
-    background-size: 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    transition: all 0.9s;
-
-    &:hover {
-      transition: all 0.9s;
-      background-size: 100%;
-      filter: grayscale(10%);
-    }
-  }
-
-  .item1 {
-    background-image: url(img/argentine-barbeque-2753040_640.jpg);
-  }
-
-  .item2 {
-    background-image: url(img/barbecue-382490_640.jpg);
-  }
-
-  .item3 {
-    background-image: url(img/beef-416967_640.jpg);
-  }
-
-  .item4 {
-    background-image: url(img/c86e0a85eef2c3f9404f5667bc228ead.jpg);
-  }
-
-  .item5 {
-    background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
-  }
-
-  .item6 {
-    background-image: url(img/IMG-20210703-WA0013.jpg);
-  }
 }
 
 /*-------------- FOOTER index y  todas las secciones-------- */
@@ -476,8 +435,6 @@ main .tituloQs {
 
   p {
     margin-bottom: 20px;
-
-   
   }
 }
 

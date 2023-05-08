@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
@@ -17,6 +16,108 @@
   background-color: rgb(229, 163, 31);
   color: black;
   text-decoration: none;
+}
+
+.item1 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/1.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item1:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+
+.item2 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/2.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item2:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+
+.item3 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/3.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item3:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+
+.item4 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/4.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item4:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+
+.item5 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/5.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item5:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
+}
+
+.item6 {
+  width: 100%;
+  background-color: white;
+  border: 5px solid white;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("img/6.png");
+  filter: grayscale(100%);
+  transition: all 0.9s;
+}
+.item6:hover {
+  transition: all 0.9s;
+  background-size: 100%;
+  filter: grayscale(10%);
 }
 
 h2 {
@@ -86,7 +187,7 @@ ul a {
 
 /* /  INDEX Section foto-titulo  img - h1 */
 .bg-image {
-  background-image: url("img/fire-4029360_1920.jpg");
+  background-image: url(img/13.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -302,7 +403,7 @@ button.btn-primary {
 
 /* ---------------SECCION NOSOTROS --------------- */
 section .jumbotron {
-  background-image: url(img/img-1.jpg);
+  background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -335,7 +436,7 @@ main .tituloQs {
 
 .nleft {
   height: 500px;
-  background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
+  background-image: url(img/12.jpg);
   background-size: cover;
   background-position: center;
   border: solid 3px black;
@@ -384,39 +485,6 @@ main .tituloQs {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-gap: 20px;
-}
-.galeria .item {
-  width: 100%;
-  background-color: white;
-  border: 5px solid white;
-  background-size: 75%;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
-  transition: all 0.9s;
-}
-.galeria .item:hover {
-  transition: all 0.9s;
-  background-size: 100%;
-  filter: grayscale(10%);
-}
-.galeria .item1 {
-  background-image: url(img/argentine-barbeque-2753040_640.jpg);
-}
-.galeria .item2 {
-  background-image: url(img/barbecue-382490_640.jpg);
-}
-.galeria .item3 {
-  background-image: url(img/beef-416967_640.jpg);
-}
-.galeria .item4 {
-  background-image: url(img/c86e0a85eef2c3f9404f5667bc228ead.jpg);
-}
-.galeria .item5 {
-  background-image: url(img/festival-de-asado-a-la-estaca-Melincué.jpg);
-}
-.galeria .item6 {
-  background-image: url(img/IMG-20210703-WA0013.jpg);
 }
 
 /*-------------- FOOTER index y  todas las secciones-------- */
