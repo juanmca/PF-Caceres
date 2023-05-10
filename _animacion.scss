@@ -1,0 +1,17 @@
+/* animacion index foto h1*/
+
+.zoom-image {
+    animation-name: zoom;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }

@@ -8,6 +8,7 @@
 
 @import "_mixins";
 @import "_bucle";
+@import "_animacion";
 
 //fonts
 
@@ -17,7 +18,7 @@ $font3: "Open Sans", sans-serif;
 
 //dimensiones
 
-$size1: 17px;
+$size1: 15px;
 $size2: 30px;
 $size3: 40px;
 $size4: 50px;
@@ -32,6 +33,8 @@ $color1: #800000;
 $color2: red;
 $color3: black;
 $color4: white;
+$color5: rgb(251, 248, 248);
+
 
 //globales
 
@@ -40,6 +43,7 @@ h2 {
   font-family: $font3;
   color: $color3;
   text-align: $center-align;
+ 
 }
 
 h3 {
@@ -59,11 +63,13 @@ a {
   font-size: 15px;
   font-family: $font3;
   font-weight: BOLD !important;
+  text-decoration: none !important ;
 }
 
 ul a {
   color: $color3 !important;
 }
+
 
 /* ----linea corta roja  separacion-- global---- */
 .linea {
@@ -94,6 +100,7 @@ ul a {
     i {
       color: black;
       font-size: 20px;
+    
     }
   }
 
@@ -115,7 +122,7 @@ ul a {
   background-position: center;
   height: 400px;
   position: relative;
-
+  
   .titulo1 {
     color: white;
     font-family: $font2;
@@ -144,33 +151,17 @@ ul a {
   }
 }
 
-/*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
 
-/* animacion*/
-
-.zoom-image {
-  animation-name: zoom;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 
 /*  INDEX -section- quienesSomos ------------------ */
 
 .quienesSomos {
   text-align: center;
+  
 
   p {
     margin-bottom: 20px;
+    line-height: 30px;
   }
 }
 
@@ -179,10 +170,10 @@ ul a {
 .tituloNe {
   h2 {
     background-color: white;
-
     margin: 0 auto;
     height: 100px;
     width: 100%;
+    background-color: $color5;
   }
 }
 
@@ -207,7 +198,7 @@ ul a {
 
 /* ----------------------INICIO SECCIONES---------------------------------------------- */
 
-/* SECCION--CONTACTOS------ */
+/* CONTACTO*/
 
 .tituloCont {
   text-align: center;
@@ -215,17 +206,8 @@ ul a {
   padding: 20px;
 }
 
-.nleftForm {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-  top: 100px;
-  left: 40px;
-}
-
 .nleftForm p {
-  color: red;
+  color: $color1;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -233,21 +215,18 @@ ul a {
 
 .container-fluid i {
   font-size: 20px;
-  color: #d31414;
+  color: #050404;
   height: 20px;
 }
+
 .nleftForm .nleftPhone {
   display: flex;
   flex-direction: row;
 }
+
 .nleftForm .nleftEmail {
   display: flex;
   flex-direction: row;
-}
-
-.nrightForm {
-  position: relative;
-  right: 40px;
 }
 
 form {
@@ -256,31 +235,32 @@ form {
 }
 
 form input[type="text"],
-form input[type="tel"] {
+form input[type="tel"],
+form input[type="email"],
+form textarea {
   height: 50px;
   border: solid 2px grey;
   margin-bottom: 20px;
-}
-
-form input[type="email"] {
-  height: 50px;
-  border: solid 2px grey;
-  margin-bottom: 30px;
 }
 
 form .form-control {
   border: solid 2px grey;
 }
 
-button.btn-primary {
+button.btn-dark {
   border: 2px solid #000;
   width: 100%;
   padding: 10px 20px;
   font-size: 20px;
-  background-color: #d31414;
-  color: #000;
-  font-weight: bold;
+  background-color: $color1;
+  color: white;
+  
 }
+
+
+
+
+
 
 /* ---------------SECCION EVENTOS----------- */
 
@@ -332,6 +312,8 @@ button.btn-primary {
 
 /* ---------------SECCION NOSOTROS --------------- */
 
+
+
 section .jumbotron {
   background-image: url(img/14.jpg);
   background-color: white;
@@ -339,30 +321,36 @@ section .jumbotron {
   background-position: center;
   background-repeat: space;
   background-attachment: fixed, scroll;
-  height: 500px;
+  height: 550px;
   width: 100%;
   color: rgb(253, 253, 247);
   border-radius: 0;
   margin-bottom: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  h2 {
-    color: white;
-    padding: 50px;
-    font-weight: bold;
-  }
+}
+.jumbotron h2 {
+  color: white;
+  
+  
 }
 
 .jumbotron p {
-  margin-top: 5px;
-  font-size: 16px;
+  margin-top: 30px;
+  color: rgb(252, 252, 250) !important;
+  font-size: 20px;
+  font-style: italic;
+  padding: 20px;
 }
 
 main .tituloQs {
   background-color: rgb(5, 5, 4);
   color: white;
   margin: 0 auto;
-  font-weight: bold;
 }
 
 .nleft {
@@ -370,32 +358,32 @@ main .tituloQs {
   background-image: url(img/12.jpg);
   background-size: cover;
   background-position: center;
-  border: solid 3px black;
 }
 
 .nright {
-  height: 500px;
   color: rgb(20, 19, 19);
-  background-color: white;
+  background-color: rgba(245, 238, 222, 0.868);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 15px;
-  border: solid 3px black;
-
-  p {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 14px;
-  }
+  background-color: $color5;
 }
 
+.nright p {
+  padding: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
 .nright p::first-letter {
   font-size: 160%;
-  color: $color1;
+  color: black;
   font-weight: bold;
 }
+
+
+
 
 /* ------------ SECCION GALERIA------------------ */
 
@@ -432,16 +420,18 @@ main .tituloQs {
   color: white;
   text-align: center;
   padding: 20px;
-
-  p {
-    margin-bottom: 20px;
-  }
 }
 
-i {
+.footer p {
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+
+}
+
+footer i {
   color: rgb(244, 248, 246);
   font-size: 30px;
-  letter-spacing: 20px;
+  letter-spacing: 30px;
 }
 
 /* -------------MEDIA QUERIES------------ */
@@ -492,3 +482,34 @@ i {
     height: auto;
   }
 }
+
+/* -------------MEDIA QUERIES CONTACTO------------ */
+
+// Estilos para pantallas pequeñas
+@media (max-width: 576px) {
+  .nleftForm {
+    left: 0;
+  }
+  .nrightForm {
+    right: 0;
+  }
+}
+
+// Estilos para pantallas medianas y grandes
+@media (min-width: 577px) {
+  .nleftForm {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 40px;
+  }
+  .nrightForm {
+    width: 60%;
+    position: relative;
+    right: 40px;
+  }
+}
+
+
