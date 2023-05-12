@@ -3,7 +3,7 @@
 $image-count: 6; //  número de imágenes
 
 @for $i from 1 through $image-count {
-  $image-name: #{"#{($i)}.png"}; 
+  $image-name: #{"#{($i)}.png"};
   .item#{$i} {
     width: 100%;
     background-color: white;
@@ -11,7 +11,7 @@ $image-count: 6; //  número de imágenes
     background-size: 75%;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("img/#{$image-name}"); 
+    background-image: url("img/#{$image-name}");
     filter: grayscale(100%);
     transition: all 0.9s;
 

@@ -27,10 +27,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="estilos.css" />
     <link rel="stylesheet" href="estilos.scss" />
@@ -40,12 +37,15 @@
   <body>
     <!-- inicio nav -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        style="background-color: #ffffff !important"
+      >
         <!-- Brand -->
         <a class="navbar-brand img-fluid" href="../index.html"
-          ><img
-            src="img/logo1.ico"
-            alt="logo-de-nuestro-sitio"
+          ><img src="img/logo1.ico" alt="logo-de-nuestro-sitio"
         /></a>
 
         <!-- Toggler/collapsibe Button -->
@@ -55,7 +55,6 @@
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
@@ -83,7 +82,12 @@
 
     <!-- inicio foto h1 -->
 
-    <section class="bg-image d-flex align-items-center zoom-image">
+    <section
+      class="bg-image d-flex align-items-center"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-delay="300"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 text-left">
@@ -97,26 +101,29 @@
       <div class="container">
         <h2 class="text-center">Quienes somos?</h2>
         <div class="linea"></div>
-        <p class="text-center">
+        <p class="text-center" data-aos="zoom-in" data-aos-duration="1000">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, neque
           fugiat. Nisi reiciendis doloribus distinctio, minima dolorem
           praesentium exercitationem animi maiores molestias ullam vero,
           sapiente, eveniet veniam deserunt dolore doloremque! Facere minus
           voluptates adipisci et quos omnis? Dicta tempore laborum eum
           accusantium consequuntur corrupti tempora earum blanditiis facilis
-          recusandae
+          recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Reiciendis ipsa tempore nam inventore dolores molestias accusamus
+          debitis? Eligendi consequatur facere fuga alias, laborum natus
+          delectus omnis illo dignissimos ea officia.
         </p>
         <a href="pages/Quienessomos.html" class="_boton">Mas info</a>
       </div>
     </section>
 
-    <!-- fin Quienes-somos -->
+    <!-- fin Quienes-somos <div class="tituloNe">
+      <h2>Organiza tu Evento</h2>
+    </div>-->
 
-    <!-- inicio Nuestros-eventos  -->
-    <div class="tituloNe">
-      <h2>Organiza tu <strong>Evento</strong></h2>
-      
-    </div>
+    <!-- inicio Nuestros-eventos <div class="contNe1">
+       -->
+
     <section class="contNe">
       <video
         class="videoFuego"
@@ -124,7 +131,11 @@
         autoplay
         muted
       ></video>
-      <div class="contNe1">
+      <div class="videoTitulo">
+        <h2 data-aos="zoom-in" data-aos-duration="1000">Organiza tu Evento</h2>
+        <p id="parrafoQs" data-aos="zoom-in" data-aos-duration="1000">
+          "Un asado a las apuradas siempre se arrebata o sale mal"
+        </p>
         <a href="pages/Nuestros-eventos.html" class="_boton">Mas info</a>
       </div>
     </section>
@@ -142,7 +153,6 @@
         ></a>
       </div>
     </footer>
-    <script src="/js/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -158,5 +168,9 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

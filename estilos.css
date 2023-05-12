@@ -120,35 +120,6 @@
   filter: grayscale(10%);
 }
 
-/* animacion index foto h1*/
-.zoom-image {
-  -webkit-animation-name: zoom;
-          animation-name: zoom;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(1);
-  }
-}
 h2 {
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
@@ -182,8 +153,7 @@ ul a {
 
 /* ----linea corta roja  separacion-- global---- */
 .linea {
-  border-bottom: 1px solid rgb(221, 30, 30);
-  border-width: 1px;
+  border-bottom: 3px solid #800000;
   margin: 20px auto;
   width: 90px;
 }
@@ -194,7 +164,7 @@ ul a {
   box-sizing: border-box;
 }
 
-/* /*logo/nav------INDEX Y SECCIONES--uso bootstrap-- */
+/* /*barra de navegacion------INDEX Y SECCIONES--uso bootstrap-- */
 .navbar {
   background-color: white;
 }
@@ -221,6 +191,7 @@ ul a {
   background-size: cover;
   background-position: center;
   height: 400px;
+  width: 100%;
   position: relative;
 }
 .bg-image .titulo1 {
@@ -255,6 +226,7 @@ ul a {
 /*  INDEX -section- quienesSomos ------------------ */
 .quienesSomos {
   text-align: center;
+  background-size: cover;
 }
 .quienesSomos p {
   margin-bottom: 20px;
@@ -262,17 +234,13 @@ ul a {
 }
 
 /*   INDEX --section -Nuestros Eventos -h2-video.mp4  --- */
-.tituloNe h2 {
-  background-color: white;
-  margin: 0 auto;
-  height: 100px;
-  width: 100%;
-  background-color: rgb(251, 248, 248);
-}
-
 .contNe {
   width: 100%;
   height: 500px;
+  position: relative;
+  text-align: center;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
 .contNe video {
   width: 100%;
@@ -280,17 +248,40 @@ ul a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.contNe .contNe1 {
+
+.videoTitulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.videoTitulo h2 {
+  font-size: 40px;
+  color: white;
   text-align: center;
-  padding: 50px;
-  height: 100px;
-  position: relative;
-  top: -100px;
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#parrafoQs {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: rgb(252, 252, 250);
+  font-size: 25px;
+  font-style: italic;
+  padding: 20px;
+}
+
+.contNe:hover {
+  filter: none;
 }
 
 /* ----------------------INICIO SECCIONES---------------------------------------------- */
 /* CONTACTO*/
 .tituloCont {
+  width: auto;
   text-align: center;
   margin-top: 150px;
   padding: 20px;
@@ -298,7 +289,6 @@ ul a {
 
 .nleftForm p {
   color: #800000;
-  font-weight: bold;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
 }
@@ -358,13 +348,13 @@ button.btn-dark {
   grid-gap: 15px;
   justify-items: center;
   padding-top: 60px;
-  margin-bottom: 30px;
+  margin: 0 auto;
 }
 .contenedor .foto {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 0 auto;
 }
 .contenedor .foto img {
   width: 250px;
@@ -373,15 +363,41 @@ button.btn-dark {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.contenedor .foto p {
-  margin-top: 10px;
-  margin-top: 30px;
+.contenedor .foto h4 {
+  height: 50px;
+  width: auto;
+  padding-top: 20px;
+  font-style: "Bebas Neue", cursive;
+  font-size: 25px;
+  color: #800000;
 }
 .contenedor .foto p::first-letter {
   font-size: 160%;
-  color: red;
+  color: black;
   font-weight: bold;
   padding: 2px;
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: px;
+}
+
+.circulo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+#acordeon1 {
+  padding-top: 20px;
 }
 
 /* ---------------SECCION NOSOTROS --------------- */
@@ -389,15 +405,15 @@ section .jumbotron {
   background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: space;
   background-attachment: fixed, scroll;
-  height: 550px;
+  height: 500px;
   width: 100%;
   color: rgb(253, 253, 247);
   border-radius: 0;
   margin-bottom: 0;
-  text-align: center;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,7 +427,7 @@ section .jumbotron {
 .jumbotron p {
   margin-top: 30px;
   color: rgb(252, 252, 250) !important;
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
   padding: 20px;
 }
@@ -420,10 +436,12 @@ main .tituloQs {
   background-color: rgb(5, 5, 4);
   color: white;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .nleft {
   height: 500px;
+  width: 100%;
   background-image: url(img/12.jpg);
   background-size: cover;
   background-position: center;
@@ -431,36 +449,33 @@ main .tituloQs {
 
 .nright {
   color: rgb(20, 19, 19);
-  background-color: rgba(245, 238, 222, 0.868);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  line-height: 25px;
   padding-bottom: 15px;
-  background-color: rgb(251, 248, 248);
 }
 
 .nright p {
   padding: 5px;
-  text-align: center;
   padding-top: 30px;
 }
 
 .nright p::first-letter {
   font-size: 160%;
-  color: black;
+  color: #800000;
   font-weight: bold;
 }
 
 /* ------------ SECCION GALERIA------------------ */
 .tituloGal h2 {
-  padding: 50px;
-  margin: 50px 0 auto;
-  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+  padding: 20px;
 }
 .tituloGal h2 p {
-  padding: 20px;
-  text-align: center;
+  padding-top: 100px;
 }
 
 .galeria {
@@ -472,6 +487,15 @@ main .tituloQs {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-gap: 20px;
+}
+
+.galeria {
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.galeria :hover {
+  box-shadow: 0px 5px 10px 3px #999999;
+  border-radius: 6px;
 }
 
 /*-------------- FOOTER index y  todas las secciones-------- */
@@ -562,4 +586,22 @@ footer i {
     position: relative;
     right: 40px;
   }
+}
+/* barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: px;
+  border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  opacity: 1;
 }/*# sourceMappingURL=estilos.css.map */

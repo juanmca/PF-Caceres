@@ -26,6 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../estilos.css" />
     <title>Contactanos</title>
   </head>
@@ -33,7 +34,12 @@
   <body>
     <!-- inicio logo nav -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        style="background-color: #ffffff !important"
+      >
         <!-- Brand -->
         <a class="navbar-brand" href="../index.html"
           ><img src="../img/logo1.ico" alt="logo-de-fuegos"
@@ -46,7 +52,6 @@
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
@@ -84,7 +89,9 @@
             </div>
             <div class="nleftEmail">
               <i class="fa-sharp fa-solid fa-envelope"></i>
-              <a href="mailto:manuel1984@gmail.com"><p class="ml-2">manuel1984@gmail.com</p></a>
+              <a href="mailto:manuel1984@gmail.com"
+                ><p class="ml-2">manuel1984@gmail.com</p></a
+              >
             </div>
           </div>
           <div class="nrightForm col-sm-8">
@@ -173,5 +180,9 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

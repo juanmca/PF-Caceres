@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="../img/logo1.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -26,6 +27,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../script.js" />
     <link rel="stylesheet" href="../estilos.css" />
     <title>Nosotros</title>
   </head>
@@ -33,12 +35,14 @@
   <body>
     <!-- inicio nav -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-dark"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
         <!-- Brand -->
         <a class="navbar-brand img-fluid" href="../index.html"
-          ><img
-            src="../img/logo1.ico "
-            alt="logo-de-fuegos"
+          ><img src="../img/logo1.ico " alt="logo-de-fuegos"
         /></a>
 
         <!-- Toggler/collapsibe Button -->
@@ -76,7 +80,6 @@
     <!-- inicio jumbotron -->
     <section>
       <div class="jumbotron">
-        <h2>NOSOTROS</h2>
         <p>
           “El fuego es magia. Troca cachos de carne en joyas. Escucha con
           atención el crepitar del carbón y escucharás aplausos, que adelantan
@@ -96,24 +99,30 @@
       <section class="container-fluid">
         <div class="row">
           <div class="nleft col-sm-6"></div>
-          <div class="nright col-sm-6">
+          <div
+            class="nright col-sm-6"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <p>
-              Fuegos es más que una empresa familiar que se dedica a la organización de
-              eventos gastronómicos. Somos una familia que arde de pasion por la carne
-              argentina y sus formas tradicionales de asarla, donde hemos
-              aprendido a través de generaciones de nuestros gauchos. Nuestra historia se
-              remonta a los tiempos en que los gauchos argentinos, verdaderos
-              maestros del asado, criaban el ganado en las vastas llanuras de
-              nuestro país. Es en ese espíritu de tradición y pasión que
-              llevamos adelante nuestra empresa familiar. En cada evento que organizamos,
-              buscamos transmitir esa esencia que hace que el asado, ya sea a la estaca, parrilla o en jaula sea mucho más que una simple comida, sino
-              una experiencia única y auténtica. Como dijo el poeta gauchesco
-              José Hernández, 'el asado es el acto social por excelencia, más
-              allá de su mera función alimentaria'."
+              Fuegos es más que una empresa familiar que se dedica a la
+              organización de eventos gastronómicos. Somos una familia que arde
+              de pasion por la carne argentina y sus formas tradicionales de
+              asarla, donde hemos aprendido a través de generaciones Nuestra
+              historia se remonta a los tiempos en que los gauchos argentinos,
+              verdaderos maestros del asado, criaban el ganado en las vastas
+              llanuras de nuestro país. Es en ese espíritu de tradición y pasión
+              que llevamos adelante nuestra empresa familiar. En cada evento que
+              organizamos, buscamos transmitir esa esencia que hace que el
+              asado, ya sea a la estaca, parrilla o en jaula sea mucho más que
+              una simple comida, sino una experiencia única y auténtica. Como
+              dijo el poeta gauchesco José Hernández, 'el asado es el acto
+              social por excelencia, más allá de su mera función alimentaria'."
             </p>
 
             <a href="Contacto.html"
-              ><button type="button" class="_boton">Mas info</button></a>
+              ><button type="button" class="_boton">Mas info</button></a
+            >
           </div>
         </div>
       </section>
@@ -134,7 +143,10 @@
         ></a>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

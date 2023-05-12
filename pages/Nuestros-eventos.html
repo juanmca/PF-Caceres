@@ -26,21 +26,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../estilos.css" />
     <title>Nuestros Eventos</title>
   </head>
 
-  <body>
+  <body class="fondoImagen">
     <!-- inicio logo nav -->
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-white border-bottom shadow-sm"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        style="background-color: #ffffff !important"
+      >
         <!-- Brand -->
         <a class="navbar-brand" href="../index.html"
-          ><img
-            src="../img/logo1.ico"
-            alt="logo-de-fuegos"
+          ><img src="../img/logo1.ico" alt="logo-de-fuegos"
         /></a>
 
         <!-- Toggler/collapsibe Button -->
@@ -50,7 +53,6 @@
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
           <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
@@ -82,47 +84,84 @@
 
     <main class="contenedor">
       <div class="foto">
-        <img
-          src="../img/7.jpg"
-          alt="evento gastronómico con carne asada"
-        />
+        <img src="../img/7.jpg" alt="evento gastronómico con carne asada" />
+        <h4>Base</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
           quis eligendi, totam cupiditate possimus, assumenda dolores
           consequuntur labore, nostrum maxime deleniti tenetur facilis sequi
-          esse quidem ullam minima neque beatae.
+          esse quidem ullam minima.
         </p>
-        <a href="" class="_boton">Saber Mas</a>
+        <a href="#acordeon1" class="_boton6" data-toggle="collapse">
+          <div class="circulo"><span>+</span></div></a
+        >
+
+        <div id="acordeon1" class="collapse">
+          <ul>
+            <li>Contenido del acordeón</li>
+            <li>Otro elemento del acordeón</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+          </ul>
+        </div>
       </div>
       <div class="foto">
-        <img
-          src="../img/8.jpg"
-          alt="dos costillares asandose a la estaca"
-        />
+        <img src="../img/8.jpg" alt="dos costillares asandose a la estaca" />
+        <h4>Vip</h4>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
           quaerat consectetur, est placeat hic doloribus, nulla obcaecati saepe
           accusamus alias velit exercitationem! Illum ad optio earum
           exercitationem illo vel consequatur.
         </p>
-        <a href="" class="_boton">Saber Mas</a>
+        <a href="#acordeon2" class="_boton6" data-toggle="collapse">
+          <div class="circulo"><span>+</span></div></a
+        >
+
+        <div id="acordeon2" class="collapse">
+          <ul>
+            <li>Contenido del acordeón</li>
+            <li>Otro elemento del acordeón</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+          </ul>
+        </div>
       </div>
       <div class="foto">
         <img
           src="../img/10.jpg"
           alt="festival de asado a la estaca en melincue"
         />
+        <h4>Premium</h4>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
           repellat quod adipisci totam maxime esse veritatis consequuntur, sunt
           temporibus tenetur tempore in culpa omnis nobis assumenda iste
           suscipit! Omnis, minima?
         </p>
-        <a href="" class="_boton">Saber Mas</a>
+        <a href="#acordeon3" class="_boton6" data-toggle="collapse">
+          <div class="circulo"><span>+</span></div></a
+        >
+
+        <div id="acordeon3" class="collapse">
+          <ul>
+            <li>Contenido del acordeón</li>
+            <li>Otro elemento del acordeón</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+            <li>Más contenido</li>
+          </ul>
+        </div>
       </div>
     </main>
 
-    <!-- inicio footer -->
+    <!-- inicio footer <a href="" class="_boton">Saber Mas</a>
+      </div>-->
     <footer class="footer">
       <h3>Fuegos</h3>
       <p>Copyright© 2023 Todos los derechos reservados</p>
@@ -136,6 +175,10 @@
         ></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
