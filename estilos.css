@@ -12,6 +12,13 @@
   font-weight: bold;
   border-style: none;
 }
+@media only screen and (min-width: 250px) and (max-width: 450px) {
+  ._boton {
+    padding: 2px 15px;
+    margin-bottom: 60px;
+    font-size: 14px;
+  }
+}
 ._boton:hover {
   background-color: rgb(229, 163, 31);
   color: black;
@@ -120,11 +127,20 @@
   filter: grayscale(10%);
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
 h2 {
   font-size: 40px;
   font-family: "Open Sans", sans-serif;
   color: black;
   text-align: center;
+}
+@media (max-width: 400px) {
+  h2 {
+    font-size: 2em;
+  }
 }
 
 h3 {
@@ -137,7 +153,11 @@ p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-style: italic;
+}
+@media (max-width: 400px) {
+  p {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -182,7 +202,7 @@ ul a {
   color: black;
   letter-spacing: 1px;
   font-size: 20px;
-  margin-inline: 40px;
+  margin-inline: 30px;
 }
 
 /* /  INDEX Section foto-titulo  img - h1 */
@@ -197,19 +217,22 @@ ul a {
 .bg-image .titulo1 {
   color: white;
   font-family: "Bebas Neue", cursive;
-  font-size: 11rem;
+  font-size: 10rem;
   text-shadow: 10px 3px 3px black;
   display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+  letter-spacing: 2px;
 }
-@media (max-width: 385px) {
+@media (max-width: 500px) {
   .bg-image .titulo1 {
     font-size: 5rem;
     text-align: center;
     height: auto;
     white-space: normal;
+    letter-spacing: 6px;
+    justify-content: left;
   }
 }
 @media (max-width: 767px) {
@@ -227,6 +250,7 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
+  background-color: #ededed;
 }
 .quienesSomos p {
   margin-bottom: 20px;
@@ -287,30 +311,26 @@ ul a {
   padding: 20px;
 }
 
-.nleftForm p {
+.container-fluid p {
   color: #800000;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
-
 .container-fluid i {
-  font-size: 20px;
+  font-size: 16px;
   color: #050404;
-  height: 20px;
 }
-
-.nleftForm .nleftPhone {
+.container-fluid .nleftPhone {
   display: flex;
   flex-direction: row;
 }
-
-.nleftForm .nleftEmail {
+.container-fluid .nleftEmail {
   display: flex;
   flex-direction: row;
 }
 
 form {
-  padding: 20px;
+  padding: 25px;
   margin-top: 80px;
 }
 
@@ -320,7 +340,7 @@ form input[type=email],
 form textarea {
   height: 50px;
   border: solid 2px grey;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 form .form-control {
@@ -367,9 +387,10 @@ button.btn-dark {
   height: 50px;
   width: auto;
   padding-top: 20px;
-  font-style: "Bebas Neue", cursive;
   font-size: 25px;
-  color: #800000;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 .contenedor .foto p::first-letter {
   font-size: 160%;
@@ -401,7 +422,7 @@ button.btn-dark {
 }
 
 /* ---------------SECCION NOSOTROS --------------- */
-section .jumbotron {
+.jumbotron {
   background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
@@ -419,11 +440,6 @@ section .jumbotron {
   justify-content: center;
   align-items: center;
 }
-
-.jumbotron h2 {
-  color: white;
-}
-
 .jumbotron p {
   margin-top: 30px;
   color: rgb(252, 252, 250) !important;
@@ -432,7 +448,7 @@ section .jumbotron {
   padding: 20px;
 }
 
-main .tituloQs {
+.tituloQs {
   background-color: rgb(5, 5, 4);
   color: white;
   margin: 0 auto;
@@ -456,13 +472,11 @@ main .tituloQs {
   line-height: 25px;
   padding-bottom: 15px;
 }
-
-.nright p {
+.nright .nright p {
   padding: 5px;
   padding-top: 30px;
 }
-
-.nright p::first-letter {
+.nright .nright p::first-letter {
   font-size: 160%;
   color: #800000;
   font-weight: bold;
@@ -474,8 +488,9 @@ main .tituloQs {
   margin-top: 150px;
   padding: 20px;
 }
-.tituloGal h2 p {
-  padding-top: 100px;
+.tituloGal p {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .galeria {
@@ -511,6 +526,7 @@ main .tituloQs {
 .footer p {
   margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
+  font-style: normal;
 }
 
 footer i {
@@ -519,8 +535,14 @@ footer i {
   letter-spacing: 30px;
 }
 
-/* -------------MEDIA QUERIES------------ */
-/* ----------------GALERIA */
+/* -------------MEDIA QUERY EVENTOS------------ */
+@media only screen and (min-width: 500px) and (max-width: 777px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ----------------MEDIAS QUERY GALERIA---------------- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -563,15 +585,23 @@ footer i {
     height: auto;
   }
 }
-/* -------------MEDIA QUERIES CONTACTO------------ */
-@media (max-width: 576px) {
+/* -------------MEDIA QUERY NOSOTROS------------ */
+@media (min-width: 150px) and (max-width: 350px) {
+  .jumbotron p {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+/* -------------MEDIA QUERY CONTACTO------------ */
+/*@media (max-width: 576px) {
   .nleftForm {
     left: 0;
   }
   .nrightForm {
     right: 0;
   }
-}
+}*/
 @media (min-width: 577px) {
   .nleftForm {
     width: 40%;
@@ -579,15 +609,34 @@ footer i {
     margin: 0 auto;
     position: relative;
     top: 100px;
-    left: 40px;
+    left: 30px;
   }
   .nrightForm {
     width: 60%;
     position: relative;
-    right: 40px;
+    left: 10px;
   }
 }
-/* barra de desplazamiento */
+@media (min-width: 300px) and (max-width: 576px) {
+  .nleftForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+/* -------------MEDIA QUERY FOOTER------------ */
+@media only screen and (max-width: 400px) {
+  .footer h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 386px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 15px;
 }

@@ -21,6 +21,7 @@ $size1: 15px;
 $size2: 30px;
 $size3: 40px;
 $size4: 50px;
+$font-size-h2: 2em;
 
 //alineacion h2 y p
 
@@ -33,6 +34,11 @@ $color2: red;
 $color3: black;
 $color4: white;
 $color5: rgb(251, 248, 248);
+$color6: #fbfbfb;
+
+body {
+  background-color: $color6;
+}
 
 //globales
 
@@ -41,6 +47,10 @@ h2 {
   font-family: $font3;
   color: $color3;
   text-align: $center-align;
+
+  @media (max-width: 400px) {
+    font-size: 2em;
+  }
 }
 
 h3 {
@@ -53,7 +63,10 @@ p {
   font-size: $size1;
   font-family: $font3;
   text-align: $center-align;
-  font-style: italic;
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -103,7 +116,7 @@ ul a {
       color: black;
       letter-spacing: 1px;
       font-size: 20px;
-      margin-inline: 40px;
+      margin-inline: 30px;
     }
   }
 }
@@ -121,19 +134,21 @@ ul a {
   .titulo1 {
     color: white;
     font-family: $font2;
-    font-size: 11rem;
+    font-size: 10rem;
     text-shadow: 10px 3px 3px black;
-
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    letter-spacing: 2px;
 
-    @media (max-width: 385px) {
+    @media (max-width: 500px) {
       font-size: 5rem;
       text-align: center;
       height: auto;
       white-space: normal;
+      letter-spacing: 6px;
+      justify-content: left;
     }
   }
 
@@ -151,6 +166,7 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
+  background-color: #ededed;
 
   p {
     margin-bottom: 20px;
@@ -202,6 +218,7 @@ ul a {
 .contNe:hover {
   filter: none;
 }
+
 /* ----------------------INICIO SECCIONES---------------------------------------------- */
 
 /* CONTACTO*/
@@ -213,30 +230,31 @@ ul a {
   padding: 20px;
 }
 
-.nleftForm p {
-  color: $color1;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-}
+.container-fluid {
+  p {
+    color: $color1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+  }
 
-.container-fluid i {
-  font-size: 20px;
-  color: #050404;
-  height: 20px;
-}
+  i {
+    font-size: 16px;
+    color: #050404;
+  }
 
-.nleftForm .nleftPhone {
-  display: flex;
-  flex-direction: row;
-}
+  .nleftPhone {
+    display: flex;
+    flex-direction: row;
+  }
 
-.nleftForm .nleftEmail {
-  display: flex;
-  flex-direction: row;
+  .nleftEmail {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 form {
-  padding: 20px;
+  padding: 25px;
   margin-top: 80px;
 }
 
@@ -246,7 +264,7 @@ form input[type="email"],
 form textarea {
   height: 50px;
   border: solid 2px grey;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 form .form-control {
@@ -296,9 +314,10 @@ button.btn-dark {
       height: 50px;
       width: auto;
       padding-top: 20px;
-      font-style: $font2;
       font-size: 25px;
-      color: $color1;
+      color: $color3;
+      font-family: $font3;
+      font-weight: bold;
     }
 
     p {
@@ -336,7 +355,7 @@ button.btn-dark {
 
 /* ---------------SECCION NOSOTROS --------------- */
 
-section .jumbotron {
+.jumbotron {
   background-image: url(img/14.jpg);
   background-color: white;
   background-size: cover;
@@ -353,20 +372,17 @@ section .jumbotron {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.jumbotron h2 {
-  color: white;
+
+  p {
+    margin-top: 30px;
+    color: rgb(252, 252, 250) !important;
+    font-size: 25px;
+    font-style: italic;
+    padding: 20px;
+  }
 }
 
-.jumbotron p {
-  margin-top: 30px;
-  color: rgb(252, 252, 250) !important;
-  font-size: 25px;
-  font-style: italic;
-  padding: 20px;
-}
-
-main .tituloQs {
+.tituloQs {
   background-color: rgb(5, 5, 4);
   color: white;
   margin: 0 auto;
@@ -390,16 +406,16 @@ main .tituloQs {
   align-items: center;
   line-height: 25px;
   padding-bottom: 15px;
-}
 
-.nright p {
-  padding: 5px;
-  padding-top: 30px;
-}
-.nright p::first-letter {
-  font-size: 160%;
-  color: $color1;
-  font-weight: bold;
+  .nright p {
+    padding: 5px;
+    padding-top: 30px;
+  }
+  .nright p::first-letter {
+    font-size: 160%;
+    color: $color1;
+    font-weight: bold;
+  }
 }
 
 /* ------------ SECCION GALERIA------------------ */
@@ -409,10 +425,11 @@ main .tituloQs {
     text-align: center;
     margin-top: 150px;
     padding: 20px;
+  }
 
-    p {
-      padding-top: 100px;
-    }
+  p {
+    padding-top: 20px;
+    text-align: center;
   }
 }
 
@@ -450,6 +467,7 @@ main .tituloQs {
 .footer p {
   margin-bottom: 20px;
   font-family: "Oswald", sans-serif;
+  font-style: normal;
 }
 
 footer i {
@@ -458,9 +476,17 @@ footer i {
   letter-spacing: 30px;
 }
 
-/* -------------MEDIA QUERIES------------ */
+/* -------------MEDIA QUERY EVENTOS------------ */
 
-/* ----------------GALERIA */
+@media only screen and (min-width: 500px) and (max-width: 777px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ----------------MEDIAS QUERY GALERIA---------------- */
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -506,18 +532,26 @@ footer i {
     height: auto;
   }
 }
+/* -------------MEDIA QUERY NOSOTROS------------ */
 
-/* -------------MEDIA QUERIES CONTACTO------------ */
+@media (min-width: 150px) and (max-width: 350px) {
+  .jumbotron p {
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
 
-// Estilos para pantallas pequeñas
-@media (max-width: 576px) {
+/* -------------MEDIA QUERY CONTACTO------------ */
+
+/*@media (max-width: 576px) {
   .nleftForm {
     left: 0;
   }
   .nrightForm {
     right: 0;
   }
-}
+}*/
 
 @media (min-width: 577px) {
   .nleftForm {
@@ -526,16 +560,38 @@ footer i {
     margin: 0 auto;
     position: relative;
     top: 100px;
-    left: 40px;
+    left: 30px;
   }
   .nrightForm {
     width: 60%;
     position: relative;
-    right: 40px;
+    left: 10px;
   }
 }
 
-/* barra de desplazamiento */
+@media (min-width: 300px) and (max-width: 576px) {
+  .nleftForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+
+/* -------------MEDIA QUERY FOOTER------------ */
+@media only screen and (max-width: 400px) {
+  .footer h3 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
+
+/* SCROLLBAR */
 ::-webkit-scrollbar {
   width: 15px;
 }
