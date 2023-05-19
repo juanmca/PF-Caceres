@@ -49,7 +49,7 @@ h2 {
   text-align: $center-align;
 
   @media (max-width: 400px) {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 
@@ -213,6 +213,11 @@ ul a {
   font-size: 25px;
   font-style: italic;
   padding: 20px;
+
+  
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 .contNe:hover {
@@ -308,6 +313,7 @@ button.btn-dark {
       height: 250px;
       border-radius: 50%;
       object-fit: cover;
+      border: solid 1px black;
     }
 
     h4 {
@@ -315,9 +321,11 @@ button.btn-dark {
       width: auto;
       padding-top: 20px;
       font-size: 25px;
-      color: $color3;
+      color: $color1;
       font-family: $font3;
       font-weight: bold;
+      text-decoration: underline;
+      
     }
 
     p {
@@ -343,6 +351,8 @@ button.btn-dark {
   margin-top: px;
 }
 
+
+
 .circulo span {
   font-size: 24px;
   font-weight: bold;
@@ -351,8 +361,15 @@ button.btn-dark {
 
 #acordeon1 {
   padding-top: 20px;
+
 }
 
+.collapse{
+  li{
+    color: $color1;
+  
+  }
+}
 /* ---------------SECCION NOSOTROS --------------- */
 
 .jumbotron {
@@ -389,6 +406,9 @@ button.btn-dark {
   text-transform: uppercase;
 }
 
+.container-fluid{
+  background-color: $color6;
+}
 .nleft {
   height: 500px;
   width: 100%;
@@ -397,26 +417,32 @@ button.btn-dark {
   background-position: center;
 }
 
-.nright {
-  color: rgb(20, 19, 19);
+
+
+  .nright {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 25px;
-  padding-bottom: 15px;
+  line-height: 30px;
+  padding: 20px;
+  
+  
 
-  .nright p {
-    padding: 5px;
-    padding-top: 30px;
+   p {
+    
+    color: $color3;
+    font-style: italic;
   }
-  .nright p::first-letter {
+ p::first-letter {
     font-size: 160%;
     color: $color1;
     font-weight: bold;
   }
 }
+
+
 
 /* ------------ SECCION GALERIA------------------ */
 
@@ -608,4 +634,49 @@ footer i {
 
 ::-webkit-scrollbar {
   opacity: 1;
+}
+
+
+
+
+
+.reseñas {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.reseñas h2 {
+  color: #333;
+}
+
+.reseñas .linea {
+  background-color: #333;
+  height: 2px;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.reseñas .reseña {
+  margin-bottom: 20px;
+  background-color: $color6;
+}
+
+.reseñas .reseña h3 {
+  color: $color1;
+  font-size: 18px;
+}
+
+.reseñas .reseña p {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.reseña .rating {
+  color: gold; /* Color de las estrellas */
+}
+
+.reseña .rating i {
+  font-size: 20px; /* Tamaño de las estrellas */
+  margin-right: 5px; /* Espacio entre las estrellas */
 }

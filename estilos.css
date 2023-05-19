@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
@@ -139,7 +140,7 @@ h2 {
 }
 @media (max-width: 400px) {
   h2 {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 
@@ -297,6 +298,11 @@ ul a {
   font-style: italic;
   padding: 20px;
 }
+@media (max-width: 400px) {
+  #parrafoQs {
+    font-size: 16px;
+  }
+}
 
 .contNe:hover {
   filter: none;
@@ -382,15 +388,17 @@ button.btn-dark {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 1px black;
 }
 .contenedor .foto h4 {
   height: 50px;
   width: auto;
   padding-top: 20px;
   font-size: 25px;
-  color: black;
+  color: #800000;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  text-decoration: underline;
 }
 .contenedor .foto p::first-letter {
   font-size: 160%;
@@ -419,6 +427,10 @@ button.btn-dark {
 
 #acordeon1 {
   padding-top: 20px;
+}
+
+.collapse li {
+  color: #800000;
 }
 
 /* ---------------SECCION NOSOTROS --------------- */
@@ -455,6 +467,10 @@ button.btn-dark {
   text-transform: uppercase;
 }
 
+.container-fluid {
+  background-color: #fbfbfb;
+}
+
 .nleft {
   height: 500px;
   width: 100%;
@@ -464,19 +480,18 @@ button.btn-dark {
 }
 
 .nright {
-  color: rgb(20, 19, 19);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 25px;
-  padding-bottom: 15px;
+  line-height: 30px;
+  padding: 20px;
 }
-.nright .nright p {
-  padding: 5px;
-  padding-top: 30px;
+.nright p {
+  color: black;
+  font-style: italic;
 }
-.nright .nright p::first-letter {
+.nright p::first-letter {
   font-size: 160%;
   color: #800000;
   font-weight: bold;
@@ -653,4 +668,45 @@ footer i {
 
 ::-webkit-scrollbar {
   opacity: 1;
+}
+
+.reseñas {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.reseñas h2 {
+  color: #333;
+}
+
+.reseñas .linea {
+  background-color: #333;
+  height: 2px;
+  margin: 20px auto;
+  width: 100px;
+}
+
+.reseñas .reseña {
+  margin-bottom: 20px;
+  background-color: #fbfbfb;
+}
+
+.reseñas .reseña h3 {
+  color: #800000;
+  font-size: 18px;
+}
+
+.reseñas .reseña p {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.reseña .rating {
+  color: gold; /* Color de las estrellas */
+}
+
+.reseña .rating i {
+  font-size: 20px; /* Tamaño de las estrellas */
+  margin-right: 5px; /* Espacio entre las estrellas */
 }/*# sourceMappingURL=estilos.css.map */
