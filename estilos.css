@@ -308,7 +308,35 @@ ul a {
   filter: none;
 }
 
-/* ----------------------INICIO SECCIONES---------------------------------------------- */
+/* Index - Reseñas */
+.reseñas {
+  padding: 50px 0;
+}
+.reseñas .reseña {
+  margin-bottom: 20px;
+  background-color: #fbfbfb;
+}
+.reseñas .reseña h3 {
+  color: #800000;
+  font-size: 18px;
+  text-align: center;
+}
+.reseñas .reseña p {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+  padding: 10px;
+}
+.reseñas .rating {
+  color: gold;
+  text-align: center;
+}
+.reseñas .rating i {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ----------------------INICIO SECCI---------------------------------------------- */
 /* CONTACTO*/
 .tituloCont {
   width: auto;
@@ -609,14 +637,6 @@ footer i {
   }
 }
 /* -------------MEDIA QUERY CONTACTO------------ */
-/*@media (max-width: 576px) {
-  .nleftForm {
-    left: 0;
-  }
-  .nrightForm {
-    right: 0;
-  }
-}*/
 @media (min-width: 577px) {
   .nleftForm {
     width: 40%;
@@ -668,45 +688,4 @@ footer i {
 
 ::-webkit-scrollbar {
   opacity: 1;
-}
-
-.reseñas {
-  background-color: #f7f7f7;
-  padding: 50px 0;
-}
-
-.reseñas h2 {
-  color: #333;
-}
-
-.reseñas .linea {
-  background-color: #333;
-  height: 2px;
-  margin: 20px auto;
-  width: 100px;
-}
-
-.reseñas .reseña {
-  margin-bottom: 20px;
-  background-color: #fbfbfb;
-}
-
-.reseñas .reseña h3 {
-  color: #800000;
-  font-size: 18px;
-}
-
-.reseñas .reseña p {
-  color: #888;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.reseña .rating {
-  color: gold; /* Color de las estrellas */
-}
-
-.reseña .rating i {
-  font-size: 20px; /* Tamaño de las estrellas */
-  margin-right: 5px; /* Espacio entre las estrellas */
 }/*# sourceMappingURL=estilos.css.map */

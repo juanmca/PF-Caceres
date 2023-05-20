@@ -214,7 +214,6 @@ ul a {
   font-style: italic;
   padding: 20px;
 
-  
   @media (max-width: 400px) {
     font-size: 16px;
   }
@@ -224,7 +223,39 @@ ul a {
   filter: none;
 }
 
-/* ----------------------INICIO SECCIONES---------------------------------------------- */
+/* Index - Reseñas */
+.reseñas {
+  padding: 50px 0;
+
+  .reseña {
+    margin-bottom: 20px;
+    background-color: $color6;
+
+    h3 {
+      color: $color1;
+      font-size: 18px;
+      text-align: center;
+    }
+    p {
+      color: #888;
+      font-size: 14px;
+      font-style: italic;
+      padding: 10px;
+    }
+  }
+
+  .rating {
+    color: gold;
+    text-align: center;
+
+    i {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+/* ----------------------INICIO SECCI---------------------------------------------- */
 
 /* CONTACTO*/
 
@@ -325,7 +356,6 @@ button.btn-dark {
       font-family: $font3;
       font-weight: bold;
       text-decoration: underline;
-      
     }
 
     p {
@@ -351,8 +381,6 @@ button.btn-dark {
   margin-top: px;
 }
 
-
-
 .circulo span {
   font-size: 24px;
   font-weight: bold;
@@ -361,13 +389,11 @@ button.btn-dark {
 
 #acordeon1 {
   padding-top: 20px;
-
 }
 
-.collapse{
-  li{
+.collapse {
+  li {
     color: $color1;
-  
   }
 }
 /* ---------------SECCION NOSOTROS --------------- */
@@ -406,7 +432,7 @@ button.btn-dark {
   text-transform: uppercase;
 }
 
-.container-fluid{
+.container-fluid {
   background-color: $color6;
 }
 .nleft {
@@ -417,32 +443,24 @@ button.btn-dark {
   background-position: center;
 }
 
-
-
-  .nright {
-
+.nright {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 30px;
   padding: 20px;
-  
-  
 
-   p {
-    
+  p {
     color: $color3;
     font-style: italic;
   }
- p::first-letter {
+  p::first-letter {
     font-size: 160%;
     color: $color1;
     font-weight: bold;
   }
 }
-
-
 
 /* ------------ SECCION GALERIA------------------ */
 
@@ -570,15 +588,6 @@ footer i {
 
 /* -------------MEDIA QUERY CONTACTO------------ */
 
-/*@media (max-width: 576px) {
-  .nleftForm {
-    left: 0;
-  }
-  .nrightForm {
-    right: 0;
-  }
-}*/
-
 @media (min-width: 577px) {
   .nleftForm {
     width: 40%;
@@ -634,49 +643,4 @@ footer i {
 
 ::-webkit-scrollbar {
   opacity: 1;
-}
-
-
-
-
-
-.reseñas {
-  background-color: #f7f7f7;
-  padding: 50px 0;
-}
-
-.reseñas h2 {
-  color: #333;
-}
-
-.reseñas .linea {
-  background-color: #333;
-  height: 2px;
-  margin: 20px auto;
-  width: 100px;
-}
-
-.reseñas .reseña {
-  margin-bottom: 20px;
-  background-color: $color6;
-}
-
-.reseñas .reseña h3 {
-  color: $color1;
-  font-size: 18px;
-}
-
-.reseñas .reseña p {
-  color: #888;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.reseña .rating {
-  color: gold; /* Color de las estrellas */
-}
-
-.reseña .rating i {
-  font-size: 20px; /* Tamaño de las estrellas */
-  margin-right: 5px; /* Espacio entre las estrellas */
 }
