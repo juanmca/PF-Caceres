@@ -129,7 +129,7 @@
 }
 
 body {
-  background-color: #fbfbfb;
+  background-color: #fafafa;
 }
 
 h2 {
@@ -188,6 +188,7 @@ ul a {
 /* /*barra de navegacion------INDEX Y SECCIONES--uso bootstrap-- */
 .navbar {
   background-color: white;
+  transition: background-color 0.3s ease-in-out;
 }
 .navbar .navbar-brand img {
   height: 60px;
@@ -251,7 +252,6 @@ ul a {
 .quienesSomos {
   text-align: center;
   background-size: cover;
-  background-color: #ededed;
 }
 .quienesSomos p {
   margin-bottom: 20px;
@@ -314,7 +314,8 @@ ul a {
 }
 .reseñas .reseña {
   margin-bottom: 20px;
-  background-color: #fbfbfb;
+  height: 100%;
+  width: 100%;
 }
 .reseñas .reseña h3 {
   color: #800000;
@@ -332,11 +333,11 @@ ul a {
   text-align: center;
 }
 .reseñas .rating i {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
-/* ----------------------INICIO SECCI---------------------------------------------- */
+/* ----------------------INICIO SECCIONES---------------------------------------------- */
 /* CONTACTO*/
 .tituloCont {
   width: auto;
@@ -372,20 +373,21 @@ form input[type=text],
 form input[type=tel],
 form input[type=email],
 form textarea {
-  height: 50px;
-  border: solid 2px grey;
+  height: 40px;
+  border: solid 1px grey;
   margin-bottom: 2px;
 }
 
 form .form-control {
-  border: solid 2px grey;
+  border: solid 1px grey;
 }
 
 button.btn-dark {
-  border: 2px solid #000;
+  border: 1px solid #000;
   width: 100%;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
   background-color: #800000;
   color: white;
 }
@@ -416,7 +418,6 @@ button.btn-dark {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 1px black;
 }
 .contenedor .foto h4 {
   height: 50px;
@@ -444,7 +445,7 @@ button.btn-dark {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: px;
+  margin-top: 6px;
 }
 
 .circulo span {
@@ -496,7 +497,7 @@ button.btn-dark {
 }
 
 .container-fluid {
-  background-color: #fbfbfb;
+  background-color: #fafafa;
 }
 
 .nleft {
@@ -539,15 +540,12 @@ button.btn-dark {
 .galeria {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: #fafafa;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 200px);
   grid-gap: 20px;
-}
-
-.galeria {
   transition: box-shadow 0.1s ease-in-out;
 }
 
